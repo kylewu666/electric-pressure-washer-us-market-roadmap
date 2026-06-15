@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>美国 Electric Pressure Washer 爆品定义与零售货架策略</title>
+  <style>
+    :root{
+      --ink:#15251d;--muted:#627068;--paper:#f4f1e8;--card:#fffdf7;--line:#d8ddd5;
+      --green:#087f5b;--green2:#20a779;--lime:#d7f5e8;--orange:#ef8b32;--yellow:#ffd66b;
+      --red:#c2413b;--blue:#3574ba;--navy:#183e55;--shadow:0 14px 38px rgba(20,45,32,.10);
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;line-height:1.55}
+    a{color:var(--green);text-decoration:none} a:hover{text-decoration:underline}
+    .hero{background:radial-gradient(circle at 85% 15%,#2bb98a 0 8%,transparent 28%),linear-gradient(135deg,#102f26,#075c46 68%,#087f5b);color:#fff;padding:70px 0 52px;overflow:hidden}
+    .wrap{width:min(1220px,calc(100% - 36px));margin:auto}
+    .eyebrow{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:#93ead0}
+    h1{font-size:clamp(34px,6vw,72px);line-height:1.04;letter-spacing:-.05em;margin:14px 0 22px;max-width:980px}
+    .hero p{max-width:780px;font-size:18px;color:#d9f4e9;margin:0}
+    .hero-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:34px;align-items:end}
+    .hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);padding:24px;border-radius:20px;backdrop-filter:blur(8px)}
+    .hero-card strong{display:block;font-size:30px}.hero-card span{color:#d7f5e8}
+    nav{position:sticky;top:0;z-index:20;background:rgba(255,253,247,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    nav .wrap{display:flex;gap:18px;overflow:auto;padding:12px 0;white-space:nowrap}
+    nav a{font-size:13px;font-weight:800;color:var(--ink);padding:7px 10px;border-radius:999px}
+    nav a:hover{background:var(--lime);text-decoration:none}
+    main{padding-bottom:70px}
+    section{padding:62px 0 0}.section-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:24px}
+    h2{font-size:clamp(27px,4vw,45px);letter-spacing:-.04em;line-height:1.1;margin:0}
+    h3{margin:0 0 10px;font-size:19px}.lead{color:var(--muted);margin:0}
+    .grid{display:grid;gap:18px}.grid>*{min-width:0}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+    .card.flat{box-shadow:none}.card.accent{border:2px solid var(--green);background:linear-gradient(145deg,#fffdf7,#eefbf5)}
+    .kpi{font-size:34px;font-weight:900;letter-spacing:-.04em}.kpi-label{font-size:12px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+    .tag{display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:999px;background:#e8eee9;color:#385249;font-size:11px;font-weight:800;margin:2px}
+    .tag.green{background:var(--lime);color:#075c46}.tag.orange{background:#fff0dc;color:#9a4f0b}.tag.red{background:#fce3e0;color:#96362f}.tag.blue{background:#e4eef9;color:#225b98}
+    .verdict{font-size:20px;font-weight:900;line-height:1.25;margin:8px 0 12px}
+    .bullets{padding-left:18px;margin:12px 0 0;color:#43564c}.bullets li{margin:7px 0}
+    .decision{display:grid;grid-template-columns:1.35fr .65fr;gap:18px}
+    .spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
+    .spec{padding:12px;background:#f1f6f2;border-radius:12px}.spec b{display:block;font-size:17px}.spec small{color:var(--muted)}
+    .retailer{position:relative;overflow:hidden}.retailer:after{content:"";position:absolute;right:-30px;top:-30px;width:100px;height:100px;border-radius:50%;background:var(--lime)}
+    .ladder{display:flex;gap:6px;align-items:stretch;margin-top:18px}.rung{min-height:130px;flex:1;padding:13px;border-radius:14px;background:#f0f3ef;border:1px solid #dde4dd;position:relative}
+    .rung strong{font-size:15px;display:block;margin-bottom:5px}.rung .price{font-size:19px;font-weight:900;color:var(--green)}.rung p{font-size:11px;color:var(--muted);margin:4px 0}
+    .insight{border-left:4px solid var(--orange);padding:10px 0 10px 16px;margin-top:16px;color:#3c4d45}
+    .toolbar{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}.toolbar label{font-size:11px;text-transform:uppercase;font-weight:900;color:var(--muted);display:flex;gap:6px;align-items:center}
+    select,button{font:inherit}select,.btn{border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:#fff;color:var(--ink);font-weight:800;font-size:12px}
+    .btn{cursor:pointer}.btn.active,.btn:hover{background:var(--green);color:#fff;border-color:var(--green)}
+    .chart-shell{background:#fff;border:1px solid var(--line);border-radius:20px;padding:10px;box-shadow:var(--shadow);overflow:auto}
+    #roadmap{width:100%;min-width:850px;height:auto;display:block}
+    .axis{font-size:11px;fill:#64726a}.axis-title{font-size:12px;fill:#2c4035;font-weight:800}.gridline{stroke:#e5e9e4;stroke-width:1}.band{fill:#f4f7f4}.node{cursor:pointer;transition:.18s}.node:hover{filter:drop-shadow(0 4px 5px rgba(0,0,0,.28));transform:translateY(-2px)}.node text{font-size:9px;font-weight:900;fill:#fff;pointer-events:none}.node-label{font-size:9px!important;fill:#1b3025!important;font-weight:800!important}
+    .legend{display:flex;gap:14px;flex-wrap:wrap;margin:12px 4px;color:var(--muted);font-size:12px}.dot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:4px}
+    .shelf-table,.data-table,.heatmap{width:100%;border-collapse:separate;border-spacing:0;font-size:12px}.shelf-table th,.data-table th,.heatmap th{position:sticky;top:0;background:#eef3ef;text-align:left;padding:10px;border-bottom:1px solid var(--line);z-index:2}.shelf-table td,.data-table td,.heatmap td{padding:10px;border-bottom:1px solid #e6e9e5;vertical-align:top}.shelf-table tr:hover,.data-table tr:hover{background:#f4fbf7}
+    .scroll{max-height:610px;overflow:auto;border:1px solid var(--line);border-radius:17px;background:#fff}
+    .role{font-weight:900;color:var(--green)}.confidence{font-size:10px;font-weight:900;padding:3px 7px;border-radius:999px;background:#eee}.confidence.high{background:#d8f5e7;color:#086044}.confidence.med{background:#fff0ca;color:#825a06}.confidence.low{background:#f2e5e2;color:#8f4339}
+    .voice-grid{grid-template-columns:minmax(320px,.72fr) minmax(650px,1.28fr)}
+    .heat-wrap{overflow:auto;padding-bottom:3px}
+    .heatmap{table-layout:fixed;min-width:620px;font-size:11px}
+    .heatmap th{position:static;top:auto;z-index:auto}
+    .heatmap th,.heatmap td{padding:6px 3px;text-align:center}
+    .heatmap th:first-child,.heatmap td:first-child{width:142px;text-align:left;padding-left:10px}
+    .heat{color:#fff;text-align:center;font-weight:900;border-radius:6px;padding:7px 3px;min-width:0}.heat small{display:block;font-weight:600;opacity:.86}
+    .evidence-list{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.evidence{padding:18px;border-radius:16px;background:#fff;border:1px solid var(--line)}.evidence .count{font-size:26px;font-weight:900}.evidence p{font-size:12px;color:var(--muted);margin:6px 0}
+    .bar-row{display:grid;grid-template-columns:150px 1fr 45px;gap:10px;align-items:center;margin:11px 0;font-size:12px;font-weight:800}.bar{height:12px;background:#e6ebe7;border-radius:10px;overflow:hidden}.bar i{display:block;height:100%;border-radius:10px;background:linear-gradient(90deg,var(--green),var(--green2))}
+    .risk{display:grid;grid-template-columns:160px 1fr 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:12px}.risk b{color:var(--red)}
+    .pitch{background:linear-gradient(135deg,#ffedd2,#fff8e9);border:1px solid #f2c685;border-radius:20px;padding:24px}.pitch q{display:block;font-size:24px;font-weight:900;line-height:1.3;color:#5d3814;margin:10px 0}
+    .method{font-size:12px;color:#53635a}.method strong{color:var(--ink)}.source-list{columns:2;column-gap:28px}.source-list li{break-inside:avoid;margin:7px 0}
+    footer{padding:40px 0;background:#102f26;color:#cbe8da;font-size:12px}
+    dialog{width:min(760px,calc(100% - 24px));border:0;border-radius:22px;padding:0;box-shadow:0 30px 90px rgba(0,0,0,.35);color:var(--ink)}dialog::backdrop{background:rgba(9,26,18,.62)}
+    .modal-head{padding:24px;background:linear-gradient(135deg,#e7f7ee,#fffdf7);display:flex;justify-content:space-between;gap:20px}.modal-body{padding:24px;max-height:70vh;overflow:auto}.close{border:0;background:#fff;border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:20px}
+    .mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.mini{padding:9px;border-radius:10px;background:#f1f4f1}.mini b{display:block}.modal-body h4{margin:20px 0 8px}
+    .note{font-size:11px;color:var(--muted);margin-top:8px}.mobile-only{display:none}
+    @media(max-width:1100px){.voice-grid{grid-template-columns:1fr}}
+    @media(max-width:900px){
+      body{overflow-x:hidden}.hero-grid,.section-head,.decision,.g4,.g3,.g2{grid-template-columns:1fr}.spec-grid{grid-template-columns:1fr 1fr}.ladder{display:grid;grid-template-columns:1fr 1fr}.evidence-list{grid-template-columns:1fr}.source-list{columns:1}.risk{grid-template-columns:1fr}.hero{padding-top:48px}.hero-card{margin-top:10px}.mini-grid{grid-template-columns:1fr 1fr}.bar-row{grid-template-columns:112px minmax(0,1fr) 30px;gap:6px}.mobile-only{display:block}
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">US Electric Pressure Washer · Retail Shelf Strategy</div>
+        <h1>不要再卖更大的数字。<br>卖“随手就能洗”。</h1>
+        <p>基于 Lowe’s、Home Depot 进店组合、Giraffe Tools 产品线、公开低星评论与美国消费者声音，反推一款真正有机会成为爆品的产品定义。</p>
+      </div>
+      <div class="hero-card">
+        <span>最终推荐</span>
+        <strong>100ft 壁挂回缩主爆品</strong>
+        <p>Rated 2100 PSI / 1.2 GPM · Brushless · $329 日常价 / $279–299 大促价</p>
+      </div>
+    </div>
+  </header>
+
+  <nav><div class="wrap">
+    <a href="#summary">执行摘要</a><a href="#shelf">零售货架</a><a href="#roadmap-section">Roadmap</a>
+    <a href="#voice">消费者声音</a><a href="#definition">产品定义</a><a href="#matrix">产品矩阵</a><a href="#methods">方法与来源</a>
+  </div></nav>
+
+  <main>
+    <section id="summary"><div class="wrap">
+      <div class="section-head"><div><div class="eyebrow" style="color:var(--green)">01 · Executive decision</div><h2>先给结论：爆品不是性能冠军，而是使用频率冠军</h2></div><p class="lead">大卖场已经把纯参数竞争做得非常充分。Giraffe 如果用普通轮式形态去正面对打 Greenworks / RYOBI，只会得到一个更贵的相似产品。</p></div>
+      <div class="grid g4">
+        <div class="card flat"><div class="kpi-label">零售竞品 List Price 核心</div><div class="kpi">$109–449</div><p class="lead">从长期入门价到高性能旗舰，Home Depot 与 Lowe’s 已密集占位；$529 DEWALT 再承担专业光环。</p></div>
+        <div class="card flat"><div class="kpi-label">消费者真实效率</div><div class="kpi">GPM + 准备时间</div><p class="lead">PSI 负责破污；流量负责冲走；“是否愿意拿出来用”决定总价值。</p></div>
+        <div class="card flat"><div class="kpi-label">Giraffe 可守住的护城河</div><div class="kpi">100ft 回缩</div><p class="lead">固定车库/院落场景中，覆盖范围与收纳便利是可立即演示的差异。</p></div>
+        <div class="card flat"><div class="kpi-label">主爆品价格窗口</div><div class="kpi">$279–329</div><p class="lead">略高于主流性能款，但低于 Giraffe 当前高端壁挂机。</p></div>
+      </div>
+      <div class="decision" style="margin-top:18px">
+        <article class="card accent">
+          <span class="tag green">推荐：100ft 壁挂</span><span class="tag blue">零售角色：便利性升级款</span>
+          <div class="verdict">用可验证的 2100 PSI / 1.2 GPM，换取“拉出即洗、松手即收”的高频使用体验。</div>
+          <div class="spec-grid">
+            <div class="spec"><b>2100 PSI</b><small>Rated Pressure</small></div>
+            <div class="spec"><b>1.2 GPM</b><small>Rated Flow</small></div>
+            <div class="spec"><b>Brushless</b><small>低噪、长寿命</small></div>
+            <div class="spec"><b>100ft</b><small>可更换软管</small></div>
+          </div>
+          <ul class="bullets">
+            <li>日常价 $329，大促价 $279–299；日常价低于 Greenworks GPW3000 的 $449 List Price。即使对方大促至 $299，消费者多付的也是每次少 5–10 分钟准备与收纳。</li>
+            <li>公开标注 Rated 与 Max 的区别，提供 100ft 末端实测数据，主动解决参数可信度问题。</li>
+            <li>3 年整机质保、软管/回缩机构可更换、低星故障快速换新，降低零售商退货风险。</li>
+          </ul>
+        </article>
+        <aside class="card">
+          <span class="tag red">不推荐：50ft 三合一做主爆品</span>
+          <div class="verdict">形态更灵活，但零售逻辑更弱。</div>
+          <ul class="bullets">
+            <li>50ft 让出 Giraffe 最直观的 100ft 覆盖优势。</li>
+            <li>重、贵、三种安装方式增加解释和退货成本。</li>
+            <li>落地/推车后，与 RYOBI、Greenworks 的轮式产品直接同质化。</li>
+            <li>更适合后续高端专业梯队，而非大众家庭 Hero SKU。</li>
+          </ul>
+        </aside>
+      </div>
+    </div></section>
+
+    <section id="shelf"><div class="wrap">
+      <div class="section-head"><div><div class="eyebrow" style="color:var(--green)">02 · Retail shelf reverse-engineering</div><h2>Lowe’s 与 Home Depot 为什么选这些型号？</h2></div><p class="lead">没有公开买手数据时，以 List Price 观察长期货架梯度，以 Promo Price 观察阶段性拉新策略；再结合 Exclusive、Best Seller、评论量、使用场景和附件组合，反推“货架意图”。以下把事实和商业推断分开。</p></div>
+      <div class="grid g2">
+        <article class="card retailer">
+          <h3>Lowe’s：用 Greenworks 建立“电动也能替代燃油”的完整升级梯</h3>
+          <div class="ladder">
+            <div class="rung"><strong>拉新引流</strong><span class="price">$139</span><p>两款 1800 PSI 共享 List Price，以形态区隔；$99 Promo 负责放大首次购买流量。</p></div>
+            <div class="rung"><strong>形态升级</strong><span class="price">$179–199</span><p>1900 行李箱式与 2200 轮式，让便利和功率各自成为加价理由。</p></div>
+            <div class="rung"><strong>性能跃升</strong><span class="price">$349</span><p>2500/2600 Brushless 共享 List Price，以重量、形态和输出区隔；GPW2500 可促销至 $299。</p></div>
+            <div class="rung"><strong>旗舰锚点</strong><span class="price">$449</span><p>GPW3000 展示电动性能上限，并可用 $299 深促制造强价值事件。</p></div>
+          </div>
+          <div class="insight"><strong>核心原因：</strong>同品牌、同入口，通过形态、电机和应用不断制造“再加一点钱”的理由；大量 Exclusive 款降低跨渠道比价。</div>
+        </article>
+        <article class="card retailer">
+          <h3>Home Depot：RYOBI 覆盖需求切片，DEWALT 承接专业品牌溢价</h3>
+          <div class="ladder">
+            <div class="rung"><strong>价格入口</strong><span class="price">$109</span><p>1800 PSI 紧凑款建立日常价格入口，并可下探 $89 做促销引流。</p></div>
+            <div class="rung"><strong>场景入口</strong><span class="price">$169–199</span><p>1200/1.8 高流量洗车、1900 轮式、2100 Foamer 分抓不同人群；洗车款可促销至 $149。</p></div>
+            <div class="rung"><strong>高性能升级</strong><span class="price">$329–429</span><p>Brushless 与更大车架，向“不要燃油机但需要更强”用户升级。</p></div>
+            <div class="rung"><strong>品牌锚点</strong><span class="price">$329–529</span><p>DEWALT 箱式全收纳，卖的是耐用、秩序与专业身份。</p></div>
+          </div>
+          <div class="insight"><strong>核心原因：</strong>不只按功率分层，而是为洗车、轻便、收纳、重度清洗、专业品牌分别提供明确答案，并用附件提升连带率。</div>
+        </article>
+      </div>
+      <div class="card" style="margin-top:18px">
+        <h3>零售商选品原因矩阵</h3>
+        <div class="scroll"><table class="shelf-table"><thead><tr><th>SKU</th><th>List Price / Promo</th><th>主要货架角色</th><th>为什么值得进店</th><th>证据等级</th></tr></thead><tbody id="shelfBody"></tbody></table></div>
+      </div>
+    </div></section>
+
+    <section id="roadmap-section"><div class="wrap">
+      <div class="section-head"><div><div class="eyebrow" style="color:var(--green)">03 · Interactive roadmap</div><h2>List Price × 可比工作参数</h2></div><p class="lead">Lowe’s 与 Home Depot 默认采用 List Price，以反映长期货架梯度；Promo Price 在详情中辅助披露。Giraffe 采用当前官网售价并可切换降价情景。竞品缺少独立“Rated”披露时，采用零售商公布的 Pressure Rating / Flow Rate；Giraffe 严格采用官网 Rated 数值，忽略 Peak。</p></div>
+      <div class="toolbar">
+        <label>范围 <select id="scope"><option value="retail">Lowe’s + Home Depot</option><option value="giraffe">Giraffe Tools</option><option value="all">全部</option></select></label>
+        <label>纵轴 <select id="metric"><option value="cu">Rated Cleaning Units</option><option value="psi">Rated Pressure</option><option value="gpm">Rated Flow</option></select></label>
+        <label>电机 <select id="motor"><option value="all">全部</option><option value="Universal">Universal</option><option value="Brushless">Brushless</option><option value="Induction">Induction</option></select></label>
+        <button class="btn active scenario" data-factor="1">零售 List / Giraffe 当前</button><button class="btn scenario" data-factor=".75">Giraffe -25%</button><button class="btn scenario" data-factor=".70">Giraffe -30%</button>
+      </div>
+      <div class="chart-shell"><svg id="roadmap" viewBox="0 0 1100 540" aria-label="产品价格与性能Roadmap"></svg></div>
+      <div class="legend"><span><i class="dot" style="background:#15955f"></i>Greenworks</span><span><i class="dot" style="background:#b7d431"></i>RYOBI</span><span><i class="dot" style="background:#efb51f"></i>DEWALT</span><span><i class="dot" style="background:#ef7132"></i>Giraffe</span><span>圆形=手提/箱式 · 方形=轮式 · 菱形=壁挂 · 六边形=三合一</span></div>
+      <p class="note">重要限制：多数大卖场竞品将最大压力与最大流量分别展示，两者未必能同时达到；因此 Cleaning Units 仅用于同一公开口径下的方向性比较，不代表独立实验室实测。</p>
+    </div></section>
+
+    <section id="voice"><div class="wrap">
+      <div class="section-head"><div><div class="eyebrow" style="color:var(--green)">04 · Voice of customer</div><h2>消费者买的不是 PSI，他们买的是“完成任务的总时间”</h2></div><p class="lead">主题编码同时观察负面问题和正面购买理由。多标签评论可贡献多个观察，因此主题观察数大于独立评论/来源数。</p></div>
+      <div class="grid g4">
+        <div class="card flat"><div class="kpi">286</div><div class="kpi-label">零售低星可访问编码观察</div><p class="note">来自逐条可见评论、低星页与零售评论摘要；未达到理论上限时不补造。</p></div>
+        <div class="card flat"><div class="kpi">42</div><div class="kpi-label">Giraffe 低星/问题观察</div><p class="note">官网低星可见量有限，并结合公开故障讨论。</p></div>
+        <div class="card flat"><div class="kpi">112</div><div class="kpi-label">社媒与独立评测观点</div><p class="note">Reddit 47、YouTube 34、独立评测/安全资料 31。</p></div>
+        <div class="card flat"><div class="kpi">440</div><div class="kpi-label">合并主题观察</div><p class="note">用于识别信号，不解释为真实故障率。</p></div>
+      </div>
+      <div class="grid voice-grid" style="margin-top:18px">
+        <article class="card"><h3>消费者关注主题排序</h3><div id="bars"></div><p class="note">条形长度表示编码观察中被提及的相对频率；耐久与实际效率拥有最强跨来源证据。</p></article>
+        <article class="card"><h3>品牌/渠道问题热力图</h3><div class="heat-wrap"><table class="heatmap" id="heatmap"></table></div><p class="note">数值为各自负面主题观察中的相对指数，100 代表该组最突出的主题。</p></article>
+      </div>
+      <div class="evidence-list" style="margin-top:18px">
+        <article class="evidence"><span class="tag green">强证据</span><div class="count">流量决定速度</div><p>专业用户、独立评测与洗车用户反复强调：PSI 负责打散污物，GPM 决定冲洗与泡沫体验。RYOBI 1200 PSI / 1.8 GPM 成为 Best Seller，证明场景比数字大小重要。</p></article>
+        <article class="evidence"><span class="tag green">强证据</span><div class="count">可靠性优先于峰值</div><p>低星反馈高频集中在不开机、压力衰减、泄漏、泵/开关失效和 GFCI 跳闸。更高宣传 PSI 无法抵消一次故障带来的退货与品牌损伤。</p></article>
+        <article class="evidence"><span class="tag orange">中等证据</span><div class="count">便利值得溢价，但有上限</div><p>消费者愿意为壁挂、全收纳与回缩付费；但当实际性能接近 $100–200 大卖场机型时，约 $600 的溢价会被明确质疑。</p></article>
+        <article class="evidence"><span class="tag orange">中等证据</span><div class="count">100ft 是卖点也是风险</div><p>覆盖范围和“随手可用”被认可；同时出现软管僵硬、压损、回缩排线混乱、软管故障与更换成本担忧。</p></article>
+        <article class="evidence"><span class="tag orange">中等证据</span><div class="count">收纳本身可以卖高价</div><p>DEWALT DWPW2100 即使性能普通，仍凭箱式全收纳、可堆叠和专业品牌获得 $329 定价，证明“秩序感”是独立价值维度。</p></article>
+        <article class="evidence"><span class="tag red">方向性证据</span><div class="count">参数信任缺口</div><p>Giraffe 与部分高 PSI 产品被质疑实际输出低于预期。主爆品应公开 Rated、Max、100ft 末端输出与测试条件，主动建立可信度。</p></article>
+      </div>
+    </div></section>
+
+    <section id="definition"><div class="wrap">
+      <div class="section-head"><div><div class="eyebrow" style="color:var(--green)">05 · Hero SKU definition</div><h2>主爆品定义：Grandfalls Core 100</h2></div><p class="lead">产品名为建议工作名。定义目标不是成为最强电动机，而是成为美国车库里使用频率最高、零售商最容易解释的清洗系统。</p></div>
+      <div class="decision">
+        <article class="card accent">
+          <span class="tag green">面向大众家庭全场景</span><span class="tag orange">Lowe’s / Home Depot 可独占配色或套装</span>
+          <div class="verdict">一句话价值：比普通压力清洗机多付约 $100，换来每次拉出即洗、自动收纳，并获得可信的主流家庭清洗性能。</div>
+          <div class="spec-grid">
+            <div class="spec"><b>$329 / $279–299</b><small>日常价 / 大促价</small></div>
+            <div class="spec"><b>2100 / 1.2</b><small>Rated PSI / GPM</small></div>
+            <div class="spec"><b>2520 CU</b><small>Rated Cleaning Units</small></div>
+            <div class="spec"><b>≤78 dB</b><small>目标噪音</small></div>
+            <div class="spec"><b>100ft</b><small>可更换、柔软抗扭软管</small></div>
+            <div class="spec"><b>Brushless</b><small>配 TSS 与热保护</small></div>
+            <div class="spec"><b>3 年整机</b><small>软管/回缩机构可维修</small></div>
+            <div class="spec"><b>5 分钟安装</b><small>模板 + 快拆壁挂底座</small></div>
+          </div>
+          <h3 style="margin-top:22px">必须保留</h3>
+          <p><span class="tag green">100ft 回缩</span><span class="tag green">软管可更换</span><span class="tag green">快速壁挂模板</span><span class="tag green">全附件收纳</span><span class="tag green">金属快接</span><span class="tag green">泡沫壶</span><span class="tag green">透明 Rated 标识</span></p>
+          <h3 style="margin-top:15px">主动舍弃</h3>
+          <p><span class="tag">推车标配</span><span class="tag">三合一复杂结构</span><span class="tag">虚高 Peak 主传播</span><span class="tag">专业级 Triplex 泵</span><span class="tag">大量低使用率附件</span></p>
+        </article>
+        <aside>
+          <div class="pitch">
+            <div class="kpi-label">给零售买手的一句话</div>
+            <q>它不是又一台 2000 PSI 清洗机，而是货架上第一台让家庭用户愿意每周使用的 100ft 自动回缩清洗站。</q>
+            <p class="lead">它补充而非替代 List Price $109–199 的走量机；以 $329 占据“便利性升级”空位，并低于 Lowe’s $349 Brushless 升级款与 $449 性能旗舰，同时带动泡沫壶、短枪、表面清洗器和冬季保养液。</p>
+          </div>
+          <div class="card flat" style="margin-top:18px">
+            <h3>后续产品梯队</h3>
+            <p><b>入门款：Core 65</b><br><span class="lead">Rated 1900 / 1.2，Universal，65ft，$229 日常价 / $199 促销；用于电商和门店拉新。</span></p>
+            <p><b>高端款：Crossfalls Flow 50</b><br><span class="lead">Rated 1350 / 2.2，Induction + Triplex，50ft 三合一，$699–749；面向洗车发烧友与小型商用。</span></p>
+          </div>
+        </aside>
+      </div>
+      <div class="card" style="margin-top:18px">
+        <h3>高频差评 → 产品设计措施</h3>
+        <div class="risk"><b>不开机 / GFCI 跳闸</b><span>电气防水、开关和电容耐久不足会直接造成退货。</span><span><strong>措施：</strong>IPX5 电气舱、插头防水升级、湿热循环与 1,000 次启停门槛。</span></div>
+        <div class="risk"><b>压力衰减 / 参数落差</b><span>100ft 软管放大压损，消费者对 Peak 宣传失去信任。</span><span><strong>措施：</strong>以枪端 100ft 实测定义 Rated；包装正面同时展示测试条件。</span></div>
+        <div class="risk"><b>软管僵硬、泄漏</b><span>长软管是差异化核心，也会成为最大保修风险。</span><span><strong>措施：</strong>柔软抗扭层、耐磨护套、金属快接、用户可更换，单独 3 年软管保障。</span></div>
+        <div class="risk"><b>回缩排线混乱</b><span>回缩若需要手动整理，会破坏核心价值主张。</span><span><strong>措施：</strong>导向排线机构、满载循环测试 ≥8,000 次、卡滞可外部复位。</span></div>
+        <div class="risk"><b>安装与冬季维护</b><span>钻墙和防冻要求增加退货、差评和售后解释。</span><span><strong>措施：</strong>纸质定位模板、水平尺、快拆底座、冬季一键排水与醒目维护标签。</span></div>
+      </div>
+    </div></section>
+
+    <section id="matrix"><div class="wrap">
+      <div class="section-head"><div><div class="eyebrow" style="color:var(--green)">06 · Product matrix</div><h2>完整产品矩阵</h2></div><p class="lead">筛选并点击产品名称查看完整参数、货架角色、差评主题和来源。Lowe’s / Home Depot 主价格采用 List Price，Promo Price 单独披露；Giraffe 采用当前官网售价。零售价格复核日期为 2026-06-15。</p></div>
+      <div class="toolbar">
+        <label>品牌 <select id="tableBrand"><option value="all">全部</option><option>Greenworks</option><option>RYOBI</option><option>DEWALT</option><option>Giraffe</option></select></label>
+        <label>形态 <select id="tableForm"><option value="all">全部</option><option>手提/箱式</option><option>轮式</option><option>壁挂</option><option>三合一</option></select></label>
+      </div>
+      <div class="scroll"><table class="data-table"><thead><tr><th>产品</th><th>渠道</th><th>主价格 / Promo</th><th>Rated PSI</th><th>Rated GPM</th><th>Rated CU</th><th>电机</th><th>形态 / 软管</th><th>质保</th><th>货架角色</th></tr></thead><tbody id="matrixBody"></tbody></table></div>
+    </div></section>
+
+    <section id="methods"><div class="wrap">
+      <div class="section-head"><div><div class="eyebrow" style="color:var(--green)">07 · Method & sources</div><h2>证据边界与研究方法</h2></div><p class="lead">报告刻意区分事实、推断与消费者个案。真实销量、毛利和买手决策未公开，因此零售策略结论不能被理解为 Lowe’s 或 Home Depot 的官方表述。</p></div>
+      <div class="grid g3">
+        <div class="card flat method"><h3>强证据</h3><p>至少 20 条相关观察，覆盖不少于 3 个型号和 2 类来源，并有独立测试或公开规格支持。</p></div>
+        <div class="card flat method"><h3>中等证据</h3><p>至少 10 条观察并覆盖 2 类来源，或独立测试与重复消费者反馈一致。</p></div>
+        <div class="card flat method"><h3>方向性证据</h3><p>少于 10 条观察、来自单一来源，或属于无法验证的个案与商业推断。</p></div>
+      </div>
+      <div class="card" style="margin-top:18px">
+        <h3>评论样本说明</h3>
+        <p class="method"><strong>预设目标：</strong>指定零售整机每款最多 100 条 1–3 星评论，Giraffe 每款最多 15 条，并补充 100–120 条社媒/独立观点。<br>
+        <strong>实际公开可访问：</strong>零售站点的分页、聚合评论和地区页面并未稳定开放完整低星评论，因此报告只编码可逐条访问的评论、公开低星页、零售评论摘要与搜索可验证片段；未达到目标上限的部分不做填充或外推。<br>
+        <strong>去重与解释：</strong>同文跨站和高度相似内容合并；多标签允许一条评论贡献多个主题观察。提及率用于识别需求信号，不等于真实故障率。</p>
+      </div>
+      <div class="card" style="margin-top:18px">
+        <h3>零售价格口径</h3>
+        <p class="method"><strong>复核日期：</strong>2026-06-15。Lowe’s 使用页面定价数据中的 Base Price 作为 List Price、Final Price 作为 Promo Price；Home Depot 使用 Original Price 作为 List Price、Value 作为 Promo Price。没有 Original / Base Price 差异的商品按当前售价记录为 List Price。促销结束日期仅作为当次页面快照，不代表未来促销计划。</p>
+      </div>
+      <div class="card" style="margin-top:18px">
+        <h3>各型号低星公开观察覆盖</h3>
+        <div class="scroll" style="max-height:420px"><table class="data-table"><thead><tr><th>型号</th><th>渠道</th><th>目标上限</th><th>实际可访问编码观察</th><th>覆盖说明</th></tr></thead><tbody id="coverageBody"></tbody></table></div>
+      </div>
+      <div class="card" style="margin-top:18px"><h3>核心公开来源</h3><ol class="source-list method" id="sources"></ol></div>
+    </div></section>
+  </main>
+
+  <footer><div class="wrap">美国 Electric Pressure Washer 爆品定义研究 · 零售价格复核：2026-06-15 · Lowe’s / Home Depot 以 List Price 为主，Promo Price 辅助披露；价格、库存、评分和评论量可能随地区变化。</div></footer>
+
+  <dialog id="detail"><div class="modal-head"><div><div class="eyebrow" style="color:var(--green)" id="modalBrand"></div><h3 id="modalTitle" style="font-size:26px;margin-top:5px"></h3></div><button class="close" onclick="detail.close()">×</button></div><div class="modal-body" id="modalBody"></div></dialog>
+
+  <script>
+  const products = [
+    {id:"gw1805",brand:"Greenworks",retailer:"Lowe’s",model:"GPW1805",name:"1800 PSI Compact",price:139,promo:99,promoEnd:"Jun 24",psi:1800,gpm:1.2,maxPsi:1800,maxGpm:1.2,motor:"Universal",pump:"Axial cam",form:"手提/箱式",hose:20,weight:"17 lb",warranty:"3年整机",reviews:4392,signal:"Lowe’s Exclusive · 1k+ bought",role:"引流款",secondary:"基础走量款",confidence:"high",reason:"$139 List Price 建立轻量入门位，$99 Promo、超大评论基数与 1k+ bought 信号共同承担阶段性拉新。",uses:"汽车、家具、小露台",issues:"不开机、压力衰减、塑料接头与软管",url:"https://www.lowes.com/pd/Greenworks-Greenworks-1800-PSI-1-2-GPM-Pressure-Washer/5015417965"},
+    {id:"gw1800",brand:"Greenworks",retailer:"Lowe’s",model:"GPW1806",name:"1800 PSI Ultra Compact",price:139,promo:99,promoEnd:"Jun 24",psi:1800,gpm:1.2,maxPsi:1800,maxGpm:1.2,motor:"Universal",pump:"Axial cam",form:"手提/箱式",hose:20,weight:"12.1 lb",warranty:"3年整机",reviews:2100,signal:"Lowe’s Exclusive",role:"引流款",secondary:"场景专用款",confidence:"med",reason:"与 GPW1805 同为 $139 List / $99 Promo，但更小更轻，以收纳和便携覆盖公寓、洗车与偶尔使用。",uses:"汽车、烧烤架、小空间",issues:"附件少、软管短、耐久性",url:"https://www.lowes.com/pd/Greenworks-GPW1800-PSI-1-2-GPM-Electric-Pressure-Washer/5016894025"},
+    {id:"gw1902",brand:"Greenworks",retailer:"Lowe’s",model:"GPW1902",name:"1900 PSI Compact Wheeled",price:179,psi:1900,gpm:1.2,maxPsi:1900,maxGpm:1.2,motor:"Universal",pump:"Axial cam",form:"轮式",hose:20,weight:"19.1 lb",warranty:"3年整机",reviews:4444,signal:"Lowe’s Exclusive · 1k+ bought",role:"主流升级款",secondary:"基础走量款",confidence:"high",reason:"以行李箱式拉杆、轮子和完整收纳，让用户从 $139 入门 List Price 自然升级，而不是只卖多 100 PSI。",uses:"家庭常规、汽车、露台",issues:"不开机、压力变弱、20ft软管",url:"https://www.lowes.com/pd/Greenworks-Greenworks-1900-PSI-1-2-GPM-Compact-Pressure-Washer/5015417969"},
+    {id:"gw2201",brand:"Greenworks",retailer:"Lowe’s",model:"GPW2201",name:"2200 PSI Wheeled",price:199,psi:2200,gpm:1.2,maxPsi:2200,maxGpm:1.2,motor:"Universal",pump:"Axial cam",form:"轮式",hose:25,weight:"约35 lb",warranty:"3年整机",reviews:2461,signal:"Lowe’s Exclusive · 1k+ bought",role:"基础走量款",secondary:"主流升级款",confidence:"high",reason:"$199 心理价位提供明显功率提升、10英寸轮和25ft软管，是轻度向中度的自然升级。",uses:"甲板、围栏、车道局部",issues:"压力不及预期、泵/开关耐久",url:"https://www.lowes.com/pd/Greenworks-2200-PSI-1-2-GPM-Cold-Water-Electric-Pressure-washer-with-4-Spray-Tips/5016859881"},
+    {id:"gw2500",brand:"Greenworks",retailer:"Lowe’s",model:"GPW2500",name:"2500 PSI TruBrushless",price:349,promo:299,promoEnd:"Jun 24",psi:2500,gpm:1.2,maxPsi:2500,maxGpm:2.0,motor:"Brushless",pump:"Axial cam",form:"轮式",hose:25,weight:"48.5 lb",warranty:"10年电机 / 3年整机",reviews:4406,signal:"Lowe’s Exclusive",role:"高性能升级款",secondary:"品牌光环款",confidence:"high",reason:"$349 List Price 用 Brushless、10年电机质保和完整车架承接“燃油替代”升级；$299 Promo 用于压低性能升级门槛。",uses:"车道、甲板、外墙",issues:"重量、软管/压力开关、长期可靠性",url:"https://www.lowes.com/pd/Greenworks-Greenworks-2500-PSI-2-3-GPM-Brushless-Pressure-Washer/5015417967"},
+    {id:"gw2600",brand:"Greenworks",retailer:"Lowe’s",model:"GPW2600",name:"2600 PSI TruBrushless",price:349,psi:2600,gpm:1.1,maxPsi:2600,maxGpm:1.1,motor:"Brushless",pump:"Axial cam",form:"轮式",hose:25,weight:"37.5 lb",warranty:"10年电机 / 3年整机",reviews:160,signal:"新品 · 高库存",role:"品牌光环与价格锚点款",secondary:"高性能升级款",confidence:"med",reason:"较高价的新款构成价格锚点，并测试消费者对轻量 Brushless 中高端的接受度。",uses:"车道、露台、外墙",issues:"价值感、参数与实际效率",url:"https://www.lowes.com/pd/Greenworks-2600-PSI-Electric-Pressure-Washer/5017493725"},
+    {id:"gw3000",brand:"Greenworks",retailer:"Lowe’s",model:"GPW3000",name:"3000 PSI Continuous-run",price:449,promo:299,promoEnd:"Jun 15",psi:3000,gpm:1.1,maxPsi:3000,maxGpm:2.0,motor:"Brushless",pump:"连续运行 Axial cam",form:"轮式",hose:25,weight:"约52 lb",warranty:"10年电机 / 3年整机",reviews:3674,signal:"Extra Big Deal · 1k+ bought",role:"品牌光环与价格锚点款",secondary:"高性能升级款",confidence:"high",reason:"$449 List Price 展示电动性能上限并锚定 Greenworks 旗舰价值；$299 Extra Big Deal 深促制造强购买事件，同时让 $349 Brushless 中高端价位显得合理。",uses:"重度家庭、车道、砖石",issues:"体积重量、装配、实际流量口径",url:"https://www.lowes.com/pd/Greenworks-Pro-Greenworks-3000-Pressure-Washer/5001554495"},
+
+    {id:"ry1800",brand:"RYOBI",retailer:"Home Depot",model:"RY141803",name:"1800 PSI Compact",price:109,promo:89,promoEnd:"Jun 21",psi:1800,gpm:1.2,maxPsi:1800,maxGpm:1.2,motor:"Universal",pump:"Axial cam",form:"手提/箱式",hose:20,weight:"约16 lb",warranty:"3年整机",reviews:352,signal:"Exclusive · Special Buy",role:"引流款",secondary:"基础走量款",confidence:"high",reason:"$109 List Price 建立 RYOBI 日常入口，紧凑形态覆盖基础任务，并可用 $89 Special Buy 制造强引流事件。",uses:"窗户、甲板、步道",issues:"短期失效、GFCI、压力有限",url:"https://www.homedepot.com/p/RYOBI-1800-PSI-1-2-GPM-Cold-Water-Corded-Electric-Pressure-Washer-RY141803/337573919"},
+    {id:"ry1900",brand:"RYOBI",retailer:"Home Depot",model:"RY1419MT",name:"1900 PSI Wheeled",price:169,psi:1900,gpm:1.2,maxPsi:1900,maxGpm:1.2,motor:"Universal",pump:"Axial cam",form:"轮式",hose:25,weight:"约32 lb",warranty:"3年整机",reviews:4070,signal:"Exclusive · 超大评论基数",role:"基础走量款",secondary:"主流升级款",confidence:"high",reason:"轮式拉杆、全收纳和 $169 价格构成最稳妥的大众家庭选择，评论基数验证长期走量。",uses:"家具、船、房车、家庭",issues:"软管管理、压力、泵耐久",url:"https://www.homedepot.com/p/RYOBI-1900-PSI-1-2-GPM-Cold-Water-Wheeled-Corded-Electric-Pressure-Washer-RY1419MT/311223300"},
+    {id:"ryauto",brand:"RYOBI",retailer:"Home Depot",model:"RY14AM12",name:"1200 PSI / 1.8 GPM Auto",price:169,promo:149,promoEnd:"Jun 14",psi:1200,gpm:1.8,maxPsi:1200,maxGpm:1.8,motor:"Universal",pump:"Axial cam",form:"手提/箱式",hose:40,weight:"约22 lb",warranty:"3年整机",reviews:818,signal:"Best Seller · Special Buy",role:"场景专用款",secondary:"附件连带款",confidence:"high",reason:"$169 List Price 与普通 1900 PSI 轮式款同价，反向证明需求切片有效：低 PSI、高流量、40ft软管和洗车附件直接抓住汽车护理用户；$149 Special Buy 扩大场景渗透。",uses:"洗车、泡沫、车辆冲洗",issues:"重度任务不足、附件耐久",url:"https://www.homedepot.com/p/RYOBI-1200-PSI-1-8-GPM-Cold-Water-Automotive-High-Flow-Electric-Pressure-Washer-Kit-RY14AM12/333071566"},
+    {id:"ry2100",brand:"RYOBI",retailer:"Home Depot",model:"RY142012",name:"2100 PSI with Foamer",price:199,psi:2100,gpm:1.2,maxPsi:2100,maxGpm:1.2,motor:"Universal",pump:"Axial cam",form:"手提/箱式",hose:25,weight:"约24 lb",warranty:"3年整机",reviews:276,signal:"Foamer bundle",role:"主流升级款",secondary:"附件连带款",confidence:"high",reason:"在 $199 关键价位用 Foamer 和场景传播制造升级理由，并提高附件感知价值。",uses:"甲板、外墙、步道、泡沫",issues:"附件兼容、长期耐久",url:"https://www.homedepot.com/p/RYOBI-2100-PSI-1-2-GPM-Cold-Water-Corded-Electric-Pressure-Washer-with-Foamer-RY142012/337573998"},
+    {id:"ry2500",brand:"RYOBI",retailer:"Home Depot",model:"RY142500",name:"2500 PSI High Performance",price:329,psi:2500,gpm:1.2,maxPsi:2500,maxGpm:1.2,motor:"Brushless",pump:"Axial cam",form:"轮式",hose:25,weight:"约40 lb",warranty:"3年整机",reviews:1040,signal:"Exclusive",role:"高性能升级款",secondary:"主流升级款",confidence:"high",reason:"以 Brushless 和“无需燃油”承接希望清洗更重任务但拒绝燃油维护的家庭。",uses:"甲板、围栏、步道",issues:"价格、压力一致性、软管/喷嘴",url:"https://www.homedepot.com/p/RYOBI-2500-PSI-1-2-GPM-High-Performance-Cold-Water-Electric-Pressure-Washer-RY142500/327680926"},
+    {id:"ry3000",brand:"RYOBI",retailer:"Home Depot",model:"RY143011",name:"3000 PSI Brushless",price:429,psi:3000,gpm:1.1,maxPsi:3000,maxGpm:1.2,motor:"Brushless",pump:"Axial cam",form:"轮式",hose:35,weight:"约49 lb",warranty:"3年整机",reviews:1383,signal:"Exclusive",role:"品牌光环与价格锚点款",secondary:"高性能升级款",confidence:"high",reason:"展示 RYOBI 插电式性能上限，并让 $329 产品显得更易接受。",uses:"大型车道、砖石、外墙",issues:"压力一致性、软管/喷嘴、重量",url:"https://www.homedepot.com/p/RYOBI-3000-PSI-1-1-GPM-Cold-Water-Electric-Pressure-Washer-RY143011/317623301"},
+    {id:"dw2100",brand:"DEWALT",retailer:"Home Depot",model:"DWPW2100",name:"2100 PSI Jobsite Box",price:329,psi:2100,gpm:1.2,maxPsi:2100,maxGpm:1.2,motor:"Universal",pump:"Axial cam",form:"手提/箱式",hose:25,weight:"24 lb",warranty:"3年整机",reviews:699,signal:"全内置收纳 · 可堆叠",role:"品牌光环与价格锚点款",secondary:"场景专用款",confidence:"high",reason:"性能并非最高，但箱式全收纳、可堆叠与 DEWALT 品牌抓住重视秩序、耐用和专业身份的人群。",uses:"工地、车库、家庭多任务",issues:"软管/枪拆装、价格、泵泄漏",url:"https://www.homedepot.com/p/DEWALT-2100-PSI-1-2-GPM-13-Amp-Cold-Water-Electric-Pressure-Washer-with-Internal-Equipment-Storage-DWPW2100/318014704"},
+    {id:"dw3000",brand:"DEWALT",retailer:"Home Depot",model:"DWPW3000",name:"3000 PSI Jobsite Box",price:529,psi:3000,gpm:1.1,maxPsi:3000,maxGpm:1.1,motor:"Brushless",pump:"Axial cam",form:"手提/箱式",hose:25,weight:"约45 lb",warranty:"3年整机",reviews:248,signal:"高价专业品牌锚点",role:"品牌光环与价格锚点款",secondary:"高性能升级款",confidence:"med",reason:"用专业品牌和内置收纳测试 $500+ 电动高压机接受度，并为 DEWALT 梯队建立上限。",uses:"重度家庭、工地",issues:"实际压力低于标称、慢启动、质保理解",url:"https://www.homedepot.com/p/DEWALT-3000-PSI-1-1-GPM-15-Amp-Cold-Water-Electric-Pressure-Washer-with-Internal-Equipment-Storage-DWPW3000/327155681"},
+
+    {id:"g20",brand:"Giraffe",retailer:"Giraffe DTC",model:"G20",name:"Grandfalls G20",price:260.99,original:289.99,psi:1900,gpm:1.2,maxPsi:2500,maxGpm:2.2,motor:"Universal",pump:"Axial cam",form:"壁挂",hose:65,weight:"39.7 lb",warranty:"2年",reviews:123,signal:"65ft紧凑壁挂",role:"入门便利款",secondary:"场景专用款",confidence:"high",reason:"用较短软管和最低价格把消费者带入回缩壁挂系统。",uses:"洗车、小露台、车库",issues:"噪音、实际性能、壁挂安装",url:"https://giraffetools.com/products/grandfalls-pressure-washer-g20"},
+    {id:"essential",brand:"Giraffe",retailer:"Giraffe DTC",model:"Essential",name:"Grandfalls Essential",price:359.99,psi:2100,gpm:1.2,maxPsi:2900,maxGpm:2.2,motor:"Universal",pump:"Axial cam",form:"壁挂",hose:100,weight:"约55 lb",warranty:"2年",reviews:181,signal:"100ft壁挂",role:"主流便利款",secondary:"基础走量款",confidence:"high",reason:"用最低 100ft 进入价格承接品牌核心价值，是最接近潜在零售主爆品的现有基座。",uses:"洗车、院落、露台",issues:"噪音、回缩/软管、价格",url:"https://giraffetools.com/products/grandfalls-retractable-pressure-washer-essential"},
+    {id:"plus",brand:"Giraffe",retailer:"Giraffe DTC",model:"Plus",name:"Grandfalls Plus",price:379.99,original:399.99,psi:2100,gpm:1.2,maxPsi:2900,maxGpm:2.2,motor:"Universal",pump:"Axial cam",form:"壁挂",hose:100,weight:"59.5 lb",warranty:"2年",reviews:218,signal:"100ft可更换软管",role:"主流便利款",secondary:"主流升级款",confidence:"high",reason:"以更柔软可更换的 100ft 软管和更完整体验承接核心家庭用户。",uses:"洗车、院落、露台",issues:"高溢价、噪音、实际输出、回缩",url:"https://giraffetools.com/products/grandfalls-retractable-pressure-washer-plus"},
+    {id:"pro",brand:"Giraffe",retailer:"Giraffe DTC",model:"Pro",name:"Grandfalls Pro",price:629.99,original:699.99,psi:2700,gpm:1.2,maxPsi:3700,maxGpm:1.6,motor:"Induction",pump:"Axial cam",form:"壁挂",hose:100,weight:"59.5 lb",warranty:"2年",reviews:307,signal:"100ft · 78–80dB",role:"高端光环款",secondary:"高性能升级款",confidence:"high",reason:"Induction、较低噪音和高 Rated Pressure 为品牌建立高端上限，但价格远离大卖场主流区。",uses:"深度清洁、车道、车辆",issues:"参数期望落差、价格、软管/回缩",url:"https://giraffetools.com/products/grandfalls-pressure-washer-pro"},
+    {id:"crossmax",brand:"Giraffe",retailer:"Giraffe DTC",model:"Crossfalls Max",name:"Crossfalls Max",price:539.99,original:599.99,psi:3000,gpm:1.1,maxPsi:3300,maxGpm:1.45,motor:"Induction",pump:"Triplex swash plate",form:"三合一",hose:50,weight:"69.3 lb",warranty:"2年",reviews:3,signal:"壁挂/落地/推车 · 65dB",role:"高性能升级款",secondary:"场景专用款",confidence:"med",reason:"把灵活安装、低噪和高压力组合给高需求用户，但重量、价格和解释复杂度限制大众化。",uses:"车道、车库、设备",issues:"高价、重量、50ft覆盖",url:"https://giraffetools.com/products/crossfalls-retractable-pressure-washer-max"},
+    {id:"ultra",brand:"Giraffe",retailer:"Giraffe DTC",model:"Crossfalls Ultra",name:"Crossfalls Ultra",price:999.99,psi:1350,gpm:2.2,maxPsi:1650,maxGpm:2.6,motor:"Induction",pump:"全铜 Triplex",form:"三合一",hose:50,weight:"71.9 lb",warranty:"3年消费 / 1年商用动力",reviews:18,signal:"1000h寿命声明 · 65dB",role:"专业光环款",secondary:"场景专用款",confidence:"med",reason:"高流量、可维修泵与寿命声明面向洗车发烧友/小商用，负责品牌技术光环而非大众销量。",uses:"洗车、车队、小商用",issues:"极高价格、维护、重量",url:"https://giraffetools.com/products/crossfalls-retractable-pressure-washer-ultra"}
+  ].map(p=>({...p,cu:Math.round(p.psi*p.gpm)}));
+
+  const themes=[
+    {name:"实际清洗效率",count:96,strength:"强",desc:"压力、流量、完成时间"},
+    {name:"耐久性",count:88,strength:"强",desc:"不开机、泵、开关、泄漏"},
+    {name:"软管体验",count:55,strength:"中",desc:"僵硬、打结、长度、磨损"},
+    {name:"价格接受度",count:52,strength:"中",desc:"便利溢价与性能价值"},
+    {name:"参数可信度",count:42,strength:"中",desc:"Peak/Max 与实际输出"},
+    {name:"附件兼容性",count:36,strength:"中",desc:"快接、泡沫壶、表面清洗器"},
+    {name:"回缩可靠性",count:31,strength:"中",desc:"排线、卡滞、弹簧"},
+    {name:"噪音",count:27,strength:"中",desc:"Universal 高频噪音"},
+    {name:"安装难度",count:24,strength:"方向",desc:"钻孔、定位、冬季拆卸"},
+    {name:"收纳便利",count:22,strength:"强",desc:"正面购买理由，负面观察较少"}
+  ];
+  const heat={
+    rows:["Greenworks / Lowe’s","RYOBI / Home Depot","DEWALT / Home Depot","Giraffe"],
+    cols:["效率","参数","软管","回缩","噪音","耐久","收纳","安装","兼容","价格"],
+    vals:[[62,48,63,0,28,100,22,5,38,25],[58,35,61,0,32,92,28,4,52,20],[49,70,52,0,25,78,36,2,38,66],[78,100,88,72,65,83,12,58,51,96]]
+  };
+  const sourceExtras=[
+    ["Giraffe 产品比较页","https://giraffetools.com/collections/pressure-washer"],
+    ["RYOBI Electric Pressure Washers 列表","https://www.homedepot.com/b/Outdoors-Outdoor-Power-Equipment-Pressure-Washers-Electric-Pressure-Washers/RYOBI/N-5yc1vZ2fkooyrZm5d"],
+    ["Lowe’s Pressure Washer Buying Guide","https://www.lowes.com/n/buying-guide/pressure-washer-buying-guide"],
+    ["Home Depot Pressure Washer Buying Guide","https://www.homedepot.com/c/ab/pressure-washer-buying-guide/9ba683603be9fa5395fab90befdde0a"],
+    ["Popular Mechanics：Giraffe Pro 独立测试","https://www.popularmechanics.com/home/tools/reviews/g120/we-test-the-top-small-pressure-washers/"],
+    ["Consumer Reports：DEWALT DWPW2100","https://www.consumerreports.org/home-garden/pressure-washers/dewalt-dwpw2100/m405873/"],
+    ["Pro Tool Reviews：DEWALT DWPW2100","https://www.protoolreviews.com/dewalt-2100-max-psi-electric-jobsite-pressure-washer/"],
+    ["Reddit：Giraffe wall-mounted 是否值得","https://www.reddit.com/r/AutoDetailing/comments/1p3uyeu/is_the_giraffe_tools_wallmounted_pressure_washer/"],
+    ["Reddit：Active 2.0 vs Giraffe","https://www.reddit.com/r/AutoDetailing/comments/1cz55p0/active_20_vs_giraffe/"],
+    ["Reddit：RYOBI 使用经验","https://www.reddit.com/r/ryobi/comments/17qeqly/what_is_your_guyss_experience_with_the_ryobi/"],
+    ["Reddit：GPM vs PSI","https://www.reddit.com/r/pressurewashing/comments/m5cjdb/what_is_more_important_gpm_or_psi/"],
+    ["CPSC：RYOBI 历史召回","https://www.cpsc.gov/Recalls"]
+  ];
+  const sampleCounts={gw1805:22,gw1800:11,gw1902:23,gw2201:26,gw2500:31,gw2600:8,gw3000:28,ry1800:9,ry1900:24,ryauto:12,ry2100:8,ry2500:19,ry3000:21,dw2100:20,dw3000:24,g20:5,essential:7,plus:9,pro:12,crossmax:3,ultra:6};
+
+  const colors={Greenworks:"#15955f",RYOBI:"#9db92b",DEWALT:"#e8ad17",Giraffe:"#ef7132"};
+  let factor=1;
+  const svg=document.getElementById("roadmap");
+  function shapeFor(p,x,y,color){
+    if(p.form==="壁挂") return `<polygon points="${x},${y-12} ${x+12},${y} ${x},${y+12} ${x-12},${y}" fill="${color}" stroke="#fff" stroke-width="2"/>`;
+    if(p.form==="三合一") return `<polygon points="${x-11},${y-7} ${x},${y-13} ${x+11},${y-7} ${x+11},${y+7} ${x},${y+13} ${x-11},${y+7}" fill="${color}" stroke="#fff" stroke-width="2"/>`;
+    if(p.form==="轮式") return `<rect x="${x-11}" y="${y-11}" width="22" height="22" rx="5" fill="${color}" stroke="#fff" stroke-width="2"/>`;
+    return `<circle cx="${x}" cy="${y}" r="12" fill="${color}" stroke="#fff" stroke-width="2"/>`;
+  }
+  function renderRoadmap(){
+    const scope=document.getElementById("scope").value, metric=document.getElementById("metric").value,motor=document.getElementById("motor").value;
+    const list=products.filter(p=>(scope==="all"||scope==="giraffe"&&p.brand==="Giraffe"||scope==="retail"&&p.brand!=="Giraffe")&&(motor==="all"||p.motor===motor));
+    const vals=list.map(p=>p[metric]),max=Math.max(...vals,10)*1.13,min=0,W=1100,H=540,l=75,r=40,t=30,b=62;
+    const x=p=>l+(((p.brand==="Giraffe"?p.price*factor:p.price)-70)/(1000-70))*(W-l-r);
+    const y=p=>H-b-(p[metric]-min)/(max-min)*(H-t-b);
+    let out="";
+    [0,.25,.5,.75,1].forEach((q,i)=>{const yy=t+q*(H-t-b),val=Math.round(max*(1-q)*10)/10;out+=`<line class="gridline" x1="${l}" x2="${W-r}" y1="${yy}" y2="${yy}"/><text class="axis" x="${l-12}" y="${yy+4}" text-anchor="end">${val}</text>`});
+    [[70,199,"入门/主流"],[200,349,"升级核心"],[350,599,"高端"],[600,1000,"光环/专业"]].forEach((d,i)=>{const xx=l+(d[0]-70)/(930)*(W-l-r),xx2=l+(d[1]-70)/930*(W-l-r);out+=`<rect class="band" opacity="${i%2?.35:.7}" x="${xx}" y="${t}" width="${xx2-xx}" height="${H-t-b}"/><text class="axis" x="${(xx+xx2)/2}" y="${H-18}" text-anchor="middle">${d[2]} $${d[0]}–${d[1]}</text>`});
+    out+=`<line x1="${l}" x2="${W-r}" y1="${H-b}" y2="${H-b}" stroke="#718077"/><line x1="${l}" x2="${l}" y1="${t}" y2="${H-b}" stroke="#718077"/><text class="axis-title" x="${W/2}" y="${H-2}" text-anchor="middle">Lowe’s / Home Depot List Price · Giraffe 当前/情景价格</text><text class="axis-title" x="17" y="${H/2}" transform="rotate(-90 17 ${H/2})" text-anchor="middle">${metric==="cu"?"Rated Cleaning Units":metric==="psi"?"Rated Pressure (PSI)":"Rated Flow (GPM)"}</text>`;
+    list.forEach((p,i)=>{const xx=x(p),yy=y(p),abbr=p.model.replace("Crossfalls ","C").slice(0,7);out+=`<g class="node" tabindex="0" role="button" onclick="showDetail('${p.id}')" onkeydown="if(event.key==='Enter')showDetail('${p.id}')">${shapeFor(p,xx,yy,colors[p.brand])}<text x="${xx}" y="${yy+3}" text-anchor="middle">${abbr}</text><text class="node-label" x="${xx}" y="${yy+(i%2?28:-18)}" text-anchor="middle">${p.brand} · $${Math.round(p.brand==="Giraffe"?p.price*factor:p.price)}</text></g>`});
+    svg.innerHTML=out;
+  }
+  function showDetail(id){
+    const p=products.find(x=>x.id===id); if(!p)return;
+    document.getElementById("modalBrand").textContent=`${p.brand} · ${p.retailer} · ${p.model}`;
+    document.getElementById("modalTitle").textContent=p.name;
+    document.getElementById("modalBody").innerHTML=`
+      <div class="mini-grid"><div class="mini"><b>$${p.price}${p.promo?` <small style="color:#b34b35">Promo $${p.promo}</small>`:p.original?` <small style="text-decoration:line-through;color:#888">$${p.original}</small>`:""}</b><small>${p.brand==="Giraffe"?"当前官网价":"List Price"}${p.promo?` / Promo${p.promoEnd?` 至 ${p.promoEnd}`:""}`:p.original?" / 官网标示原价":""}</small></div><div class="mini"><b>${p.psi} PSI</b><small>Rated/零售 Pressure Rating</small></div><div class="mini"><b>${p.gpm} GPM</b><small>Rated/零售 Flow Rate</small></div><div class="mini"><b>${p.cu} CU</b><small>方向性 Cleaning Units</small></div></div>
+      <h4>产品与货架定位</h4><p><span class="tag green">${p.role}</span><span class="tag">${p.secondary}</span><span class="tag blue">${p.confidence==="high"?"高可信推断":p.confidence==="med"?"中等可信推断":"方向性推断"}</span></p><p>${p.reason}</p>
+      <h4>关键规格</h4><p>电机：<b>${p.motor}</b> · 泵：<b>${p.pump}</b> · 形态：<b>${p.form}</b> · 软管：<b>${p.hose}ft</b> · 重量：<b>${p.weight}</b> · 质保：<b>${p.warranty}</b></p>
+      <p>Max/Peak 补充披露：${p.maxPsi} PSI / ${p.maxGpm} GPM。<br>零售信号：${p.signal} · 评论量/可见评价量：${p.reviews}</p>
+      <h4>用途与低星主题</h4><p>主要用途：${p.uses}</p><p>重点低星主题：${p.issues}</p>
+      <p><a href="${p.url}" target="_blank" rel="noopener">打开公开产品来源 ↗</a></p>`;
+    detail.showModal();
+  }
+  function renderShelf(){
+    document.getElementById("shelfBody").innerHTML=products.filter(p=>p.brand!=="Giraffe").map(p=>`<tr><td><a href="javascript:showDetail('${p.id}')"><b>${p.brand} ${p.model}</b></a><br><small>${p.name}</small></td><td><b>$${p.price}</b>${p.promo?`<br><small style="color:#b34b35">Promo $${p.promo}${p.promoEnd?` · 至 ${p.promoEnd}`:""}</small>`:""}</td><td><span class="role">${p.role}</span><br><small>${p.secondary}</small></td><td>${p.reason}</td><td><span class="confidence ${p.confidence==="high"?"high":"med"}">${p.confidence==="high"?"高可信推断":"方向性/中等推断"}</span></td></tr>`).join("");
+  }
+  function renderBars(){
+    const max=Math.max(...themes.map(x=>x.count));
+    document.getElementById("bars").innerHTML=themes.map(x=>`<div class="bar-row"><span>${x.name}<br><small style="color:#75837b">${x.strength}证据</small></span><div class="bar"><i style="width:${x.count/max*100}%"></i></div><span>${x.count}</span></div>`).join("");
+  }
+  function renderHeat(){
+    let h=`<thead><tr><th>组别</th>${heat.cols.map(c=>`<th>${c}</th>`).join("")}</tr></thead><tbody>`;
+    heat.rows.forEach((r,i)=>{h+=`<tr><td><b>${r}</b></td>${heat.vals[i].map(v=>`<td><div class="heat" style="background:hsl(${135-v*.95} 55% ${62-v*.25}%)">${v}</div></td>`).join("")}</tr>`});h+="</tbody>";document.getElementById("heatmap").innerHTML=h;
+  }
+  function renderMatrix(){
+    const brand=document.getElementById("tableBrand").value,form=document.getElementById("tableForm").value;
+    document.getElementById("matrixBody").innerHTML=products.filter(p=>(brand==="all"||p.brand===brand)&&(form==="all"||p.form===form)).map(p=>`<tr><td><a href="javascript:showDetail('${p.id}')"><b>${p.brand} ${p.model}</b></a><br><small>${p.name}</small></td><td>${p.retailer}</td><td><b>$${p.price}</b><br><small>${p.brand==="Giraffe"?"当前官网价":"List Price"}</small>${p.promo?`<br><small style="color:#b34b35">Promo $${p.promo}${p.promoEnd?` · 至 ${p.promoEnd}`:""}</small>`:p.original?`<br><small>官网原价 $${p.original}</small>`:""}</td><td>${p.psi}<br><small>Max ${p.maxPsi}</small></td><td>${p.gpm}<br><small>Max ${p.maxGpm}</small></td><td>${p.cu}</td><td>${p.motor}<br><small>${p.pump}</small></td><td>${p.form}<br><small>${p.hose}ft · ${p.weight}</small></td><td>${p.warranty}</td><td><span class="role">${p.role}</span></td></tr>`).join("");
+  }
+  function renderSources(){
+    const core=products.map(p=>[`${p.brand} ${p.model} 产品页`,p.url]);
+    document.getElementById("sources").innerHTML=[...core,...sourceExtras].map(s=>`<li><a href="${s[1]}" target="_blank" rel="noopener">${s[0]}</a></li>`).join("");
+  }
+  function renderCoverage(){
+    document.getElementById("coverageBody").innerHTML=products.map(p=>{const n=sampleCounts[p.id]||0,limit=p.brand==="Giraffe"?15:100;return `<tr><td><a href="javascript:showDetail('${p.id}')"><b>${p.brand} ${p.model}</b></a></td><td>${p.retailer}</td><td>${limit}</td><td><b>${n}</b></td><td>${n>=limit?"达到目标上限":n>=20?"公开反馈较充足":n>=10?"中等覆盖，谨慎外推":"公开低星内容有限，仅作方向判断"}</td></tr>`}).join("");
+  }
+  document.querySelectorAll("#scope,#metric,#motor").forEach(x=>x.addEventListener("change",renderRoadmap));
+  document.querySelectorAll(".scenario").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".scenario").forEach(x=>x.classList.remove("active"));b.classList.add("active");factor=+b.dataset.factor;renderRoadmap()}));
+  document.querySelectorAll("#tableBrand,#tableForm").forEach(x=>x.addEventListener("change",renderMatrix));
+  document.getElementById("detail").addEventListener("click",e=>{if(e.target===e.currentTarget)detail.close()});
+  renderShelf();renderRoadmap();renderBars();renderHeat();renderMatrix();renderCoverage();renderSources();
+  </script>
+</body>
+</html>
